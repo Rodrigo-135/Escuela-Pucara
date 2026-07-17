@@ -1,0 +1,310 @@
+.footer {
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 217, 26, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(170, 160, 199, 0.16),
+      transparent 32%
+    ),
+    #302b43;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  right: -120px;
+  bottom: -140px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 217, 26, 0.12);
+}
+
+.footer-container {
+  position: relative;
+  z-index: 2;
+
+  width: 90%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+  padding: 80px 0;
+
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1fr 1fr;
+
+  gap: 48px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.footer-logo img {
+  width: 72px;
+  height: 72px;
+
+  object-fit: contain;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 4px;
+}
+
+.footer-logo h3 {
+  color: #ffffff;
+
+  font-size: 22px;
+  line-height: 1.15;
+
+  font-weight: 900;
+}
+
+.footer-logo span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #d7d1ea;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.footer-brand p {
+  margin-top: 24px;
+
+  color: #d8d6e5;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  font-weight: 600;
+}
+
+.footer-social {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+.footer-social a {
+  display: inline-flex;
+
+  padding: 12px 18px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 900;
+
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: #ffe33d;
+
+  color: #302b43;
+
+  transform: translateY(-3px);
+}
+
+.footer-column h4,
+.footer-cta h4 {
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 900;
+
+  margin-bottom: 22px;
+}
+
+.footer-column nav {
+  display: flex;
+  flex-direction: column;
+
+  gap: 13px;
+}
+
+.footer-column nav a {
+  color: #d8d6e5;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.footer-column nav a:hover {
+  color: #ffe33d;
+
+  transform: translateX(4px);
+}
+
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  list-style: none;
+}
+
+.footer-column li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  color: #d8d6e5;
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  font-weight: 600;
+}
+
+.footer-column li span {
+  flex-shrink: 0;
+}
+
+.footer-column li a {
+  color: #d8d6e5;
+
+  transition: 0.3s ease;
+}
+
+.footer-column li a:hover {
+  color: #ffe33d;
+}
+
+.footer-cta p {
+  color: #d8d6e5;
+
+  font-size: 15px;
+  line-height: 1.75;
+
+  font-weight: 600;
+}
+
+.footer-button {
+  display: inline-flex;
+
+  margin-top: 24px;
+
+  padding: 14px 20px;
+
+  border-radius: 15px;
+
+  background: linear-gradient(
+    135deg,
+    #ffe33d,
+    #f5c914
+  );
+
+  color: #332f24;
+
+  font-size: 14px;
+  font-weight: 900;
+
+  box-shadow: 0 12px 28px rgba(245, 201, 20, 0.22);
+
+  transition: 0.3s ease;
+}
+
+.footer-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 16px 32px rgba(245, 201, 20, 0.32);
+}
+
+.footer-link {
+  display: block;
+
+  margin-top: 16px;
+
+  color: #d7d1ea;
+
+  font-size: 14px;
+  font-weight: 900;
+
+  transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffe33d;
+}
+
+.footer-bottom {
+  position: relative;
+  z-index: 2;
+
+  width: 90%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+  padding: 24px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-bottom p,
+.footer-bottom span {
+  color: #c7c3d8;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    padding: 60px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
